@@ -12,34 +12,34 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
-                    <input class="form-control" type="text">
-                    <button class="generate-btn">Generate Pin</button>
+                    <input id="generate-pin-input" class="form-control" type="text">
+                    <button id="generate-pin-btn"  class="generate-btn">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input class="form-control" type="text">
+                    <input id="pin-matching-input" class="form-control" type="text">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                              <div class="button">7</div>
-                              <div class="button">8</div>
-                              <div class="button">9</div>
+                              <div class="button btn-number">7</div>
+                              <div class="button btn-number">8</div>
+                              <div class="button btn-number">9</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button">4</div>
-                              <div class="button">5</div>
-                              <div class="button">6</div>
+                              <div class="button btn-number">4</div>
+                              <div class="button btn-number">5</div>
+                              <div class="button btn-number">6</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button">1</div>
-                              <div class="button">2</div>
-                              <div class="button">3</div>
+                              <div class="button btn-number">1</div>
+                              <div class="button btn-number">2</div>
+                              <div class="button btn-number">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button">&lt;</div>
-                                <div class="button">0</div>
-                                <div class="button">C</div>
+                                <div class="button btn-delete">&lt;</div>
+                                <div class="button btn-number">0</div>
+                                <div class="button btn-clear">C</div>
                             </div>
                             <div>
                                 <button type="submit" class="submit-btn">Submit</button>
@@ -50,9 +50,12 @@
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="fail-msg" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="success-msg" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
+
+    <!-- script files -->
+    <script src="script.js"></script>
 </body>
 </html>
